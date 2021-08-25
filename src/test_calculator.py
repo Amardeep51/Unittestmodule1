@@ -4,14 +4,14 @@ Testing src/calculator.py
 """
 
 import unittest
-import src.calculator
+import calculator
 
 class CalculatorTest(unittest.TestCase):
     """Tests performed on the Calculator class"""
     
     def setUp(self):
         """Set up our test"""
-        self.calc = src.calculator.Calculator()
+        self.calc = calculator.Calculator()
     
     def test_add_adds_all_numbers(self):
         self.assertEqual(self.calc.add(9), 9)
