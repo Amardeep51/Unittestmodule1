@@ -10,13 +10,13 @@ pipeline {
         }
         stage('Testing Stage'){
             steps{
-                bat 'python tests/test_calculator.py'
+                bat 'python src/test_calculator.py'
                 echo "Unit Test done successfully!"
             }
         }
         stage('Output'){
             steps{
-                bat 'python runtests.py'
+                bat 'python src/runtests.py'
                 echo "That is the result of testing"
             }
         }
